@@ -59,8 +59,7 @@ project ( statistics
 # cmake root for needed modules, license under Sorcery Institute
 #######################################################################
 #
-set (Singleterry_CMAKE_root "/users0/rsinglet/gitlab/cmake_modules/modules")
-list (INSERT CMAKE_MODULE_PATH 0 "${Singleterry_CMAKE_root}")
+list (INSERT CMAKE_MODULE_PATH 0 "${CMAKE_CURRENT_LIST_DIR}/cmake-modules/")
 include (PlatformAbstraction) # Set compiler options based on platform and compiler
 include (AddLibFunction)      # Function that adds libraries
 #
