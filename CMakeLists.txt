@@ -89,11 +89,11 @@ foreach(test ${test_list})
 )
 endforeach()
 #
-add_custom_target ( RUN_ALL_driver_test_TESTS
+add_custom_target ( RUN_ALL_statistics_TESTS
      COMMAND ${CMAKE_CTEST_COMMAND} -C $<CONFIG> --output-on-failure -L "read_mctal"
 )
 #
 set_property (
-     TARGET RUN_ALL_driver_test_TESTS
+     TARGET RUN_ALL_statistics_TESTS
      PROPERTY FOLDER "All-Tests"
 )
