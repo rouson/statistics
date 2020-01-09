@@ -1,0 +1,3 @@
+[submodule "src/git-submodule/quick_sort"]
+	path = src/git-submodule/quick_sort
+	url = https://github.com/singleterry/quick_sort
