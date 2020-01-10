@@ -21,7 +21,7 @@ Module statistical_data_mod
      Procedure :: set_data, clear_data
      Procedure :: get_elemental_data, get_array_data
 !
-!     Procedure, Private :: Statistical_Median
+     Procedure, Private :: Statistical_Median
      Procedure, Private :: Statistical_Mean
      Procedure, Private :: Statistical_Variance
      Procedure, Private :: Statistical_Std_Dev
@@ -30,7 +30,7 @@ Module statistical_data_mod
 !
      Generic :: get_data     => get_elemental_data, get_array_data
 !
-!     Generic :: get_median   => Statistical_Median
+     Generic :: get_median   => Statistical_Median
      Generic :: get_mean     => Statistical_Mean
      Generic :: get_variance => Statistical_Variance
      Generic :: get_std_dev  => Statistical_Std_Dev
@@ -45,11 +45,11 @@ Module statistical_data_mod
 !
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !
-!     Module Function Statistical_Median ( this ) Result ( median )
-!       Implicit None
-!       Class ( Statistical_Data ) ,Intent(in) :: this
-!       Real(KIND=rkind)                       :: median
-!     End Function Statistical_Median
+     Module Function Statistical_Median ( this ) Result ( median )
+       Implicit None
+       Class ( Statistical_Data ) ,Intent(inout) :: this
+       Real(KIND=rkind)                          :: median
+     End Function Statistical_Median
 !
      Module Function Statistical_Mean ( this ) Result ( mean )
        Implicit None
