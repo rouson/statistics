@@ -10,8 +10,8 @@ add_lib ( statistics-mods
 	  "statistical_std_dev_smod.f90"
 	  "statistical_skewness_smod.f90"
 	  "statistical_kurtosis_smod.f90"
+	  "statistical_median_smod.f90"
 )
-#	  "statistical_median_smod.f90"
 #
 set_property (
      TARGET statistics-mods

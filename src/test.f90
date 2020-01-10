@@ -12,7 +12,7 @@ Program test
   Real(KIND=rkind), Dimension(n) :: data
   Type ( Statistical_Data ) :: a
 !
-!  Real(KIND=rkind), Parameter :: expt_median   = ???_rkind
+  Real(KIND=rkind), Parameter :: expt_median   = +4.99776205742348E+000_rkind
   Real(KIND=rkind), Parameter :: expt_mean     = +4.99727900261068E+000_rkind
   Real(KIND=rkind), Parameter :: expt_variance = +0.161102392359480E+000_rkind
   Real(KIND=rkind), Parameter :: expt_std_dev  = +0.401375625019109E+000_rkind
@@ -32,7 +32,7 @@ Program test
 !
   Call a%set_data ( data )
 !
-!  If ( absolute_error ( expt_median,   a%get_median()   ) > tolerance ) Error Stop "Incorrect Median"
+  If ( absolute_error ( expt_median,   a%get_median()   ) > tolerance ) Error Stop "Incorrect Median"
   If ( absolute_error ( expt_mean,     a%get_mean()     ) > tolerance ) Error Stop "Incorrect Mean"
   If ( absolute_error ( expt_variance, a%get_variance() ) > tolerance ) Error Stop "Incorrect Variance"
   If ( absolute_error ( expt_std_dev,  a%get_std_dev()  ) > tolerance ) Error Stop "Incorrect Std_Dev"
