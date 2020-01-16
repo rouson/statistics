@@ -41,4 +41,4 @@ else()
     "Please report any failures through the task-manager Git issues\n\n"
   )
 endif()
-# list(JOIN ${CMAKE_Fortran_COMPILER_ID}_Fortran_FLAGS_${CMAKE_BUILD_TYPE} " " CMAKE_Fortran_FLAGS) # Note: This is left out intentionally due to failing build. Issue w/ sleep function. IP 11/06/2019
+list(JOIN ${CMAKE_Fortran_COMPILER_ID}_Fortran_FLAGS_${CMAKE_BUILD_TYPE} " " CMAKE_Fortran_FLAGS) # Note: This is left out intentionally due to failing build. Issue w/ sleep function. IP 11/06/2019
