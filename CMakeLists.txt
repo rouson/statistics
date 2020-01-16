@@ -37,7 +37,6 @@ string  (APPEND GREETING "\n")
 string  (PREPEND GREETING "\n")
 message (STATUS "${GREETING}")
 
-
 #######################################################################
 #######################################################################
 #      Begin statistics-specific targets and configuration            #
@@ -56,7 +55,7 @@ project ( statistics
 )
 #
 #######################################################################
-# cmake root for needed modules, license under Sorcery Institute
+# cmake root for needed modules, license under Sourcery Institute
 #######################################################################
 #
 list (INSERT CMAKE_MODULE_PATH 0 "${CMAKE_CURRENT_LIST_DIR}/cmake-modules/")

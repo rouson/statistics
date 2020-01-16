@@ -23,3 +23,9 @@ set_property (
      PROPERTY Fortran_MODULE_DIRECTORY ${statistics_mod_dir}
 )
 #
+target_link_libraries (statistics-mods
+   quick_sort-mods
+)
+target_include_directories (statistics-mods
+   PUBLIC $<TARGET_PROPERTY:quick_sort-mods,Fortran_MODULE_DIRECTORY>
+)
